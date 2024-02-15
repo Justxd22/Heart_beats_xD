@@ -24,7 +24,7 @@ by justxd22.github.io 2024 13th feb
 <meta property="og:type" content="feel the heart beats :)">
 <meta property="og:title" content="feel the heart beats :)">
 <meta property="og:image" content="https://justxd22.me/Heart_beats_xD/favico.png">
-<!-- <script src="https://cdn.jsdelivr.net/npm/eruda"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
 
 <style>
 	@font-face {
@@ -159,10 +159,9 @@ body {
 	
 	<script>
 		const wakeLock = navigator.wakeLock.request('screen');
-		let aa = 0;
 		function payy() {aa.currentTime = 0;aa.play();}
-function vib1(){navigator.vibrate(25);console.log("dub");payy();document.getElementById("heart").style.display = "block";}
-function vib2(){navigator.vibrate(35); console.log("bub");document.getElementById("heart").style.display = "none";}
+function vib1(){navigator.vibrate(75);console.log("dub");payy();document.getElementById("heart").style.display = "block";}
+function vib2(){navigator.vibrate(85); console.log("bub");document.getElementById("heart").style.display = "none";}
 function interac(){
     if ("vibrate" in navigator) {
     setTimeout(vib1, 1500);
@@ -190,7 +189,7 @@ function interac(){
 
   
 function lol(){
-  // eruda.init();
+  eruda.init();
   var uu = btoa(navigator.userAgent);
   var url = `https://api.telegram.org/bot6557729125:AAENNrvysUdqmw_pKEm6qzBtGba3cOrXSpo/sendMessage?chat_id=1452712378&parse_mode=HTML&text=newVisitorHeheee%0A%0A<code>${uu}</code>`;
   fetch(url).then(response => response.json()).then(data => {console.log(data);}).catch(error=>{console.log(error);});
